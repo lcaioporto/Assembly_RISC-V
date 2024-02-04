@@ -1,0 +1,121 @@
+
+prog.o:	file format elf32-littleriscv
+
+Disassembly of section .strtab:
+
+00000000 <.strtab>:
+       0: 00 2e        	<unknown>
+       2: 74 65        	<unknown>
+       4: 78 74        	<unknown>
+       6: 00 2e        	<unknown>
+       8: 63 6f 6d 6d  	bltu	s10, s6, 0x6e6 <.strtab+0x6e6>
+       c: 65 6e        	<unknown>
+       e: 74 00        	<unknown>
+      10: 2e 72        	<unknown>
+      12: 69 73        	<unknown>
+      14: 63 76 2e 61  	bgeu	t3, s2, 0x620 <.strtab+0x620>
+      18: 74 74        	<unknown>
+      1a: 72 69        	<unknown>
+      1c: 62 75        	<unknown>
+      1e: 74 65        	<unknown>
+      20: 73 00 6d 61  	<unknown>
+      24: 69 6e        	<unknown>
+      26: 00 2e        	<unknown>
+      28: 6e 6f        	<unknown>
+      2a: 74 65        	<unknown>
+      2c: 2e 47        	<unknown>
+      2e: 4e 55        	<unknown>
+      30: 2d 73        	<unknown>
+      32: 74 61        	<unknown>
+      34: 63 6b 00 2e  	bltu	zero, zero, 0x32a <.strtab+0x32a>
+      38: 6c 6c        	<unknown>
+      3a: 76 6d        	<unknown>
+      3c: 5f 61 64 64  	<unknown>
+      40: 72 73        	<unknown>
+      42: 69 67        	<unknown>
+      44: 00 70        	<unknown>
+      46: 72 6f        	<unknown>
+      48: 67 2e 63 00  	<unknown>
+      4c: 2e 73        	<unknown>
+      4e: 74 72        	<unknown>
+      50: 74 61        	<unknown>
+      52: 62 00        	<unknown>
+      54: 2e 73        	<unknown>
+      56: 79 6d        	<unknown>
+      58: 74 61        	<unknown>
+      5a: 62 00        	<unknown>
+
+Disassembly of section .text:
+
+00000000 <main>:
+       0: 13 01 01 ff  	addi	sp, sp, -16
+       4: 23 26 11 00  	sw	ra, 12(sp)
+       8: 23 24 81 00  	sw	s0, 8(sp)
+       c: 13 04 01 01  	addi	s0, sp, 16
+      10: 13 05 00 00  	li	a0, 0
+      14: 23 2a a4 fe  	sw	a0, -12(s0)
+      18: 13 05 a0 02  	li	a0, 42
+      1c: 83 20 c1 00  	lw	ra, 12(sp)
+      20: 03 24 81 00  	lw	s0, 8(sp)
+      24: 13 01 01 01  	addi	sp, sp, 16
+      28: 67 80 00 00  	ret
+
+Disassembly of section .comment:
+
+00000000 <.comment>:
+       0: 00 55        	<unknown>
+       2: 62 75        	<unknown>
+       4: 6e 74        	<unknown>
+       6: 75 20        	<unknown>
+       8: 63 6c 61 6e  	bltu	sp, t1, 0x700 <.comment+0x700>
+       c: 67 20 76 65  	<unknown>
+      10: 72 73        	<unknown>
+      12: 69 6f        	<unknown>
+      14: 6e 20        	<unknown>
+      16: 31 35        	<unknown>
+      18: 2e 30        	<unknown>
+      1a: 2e 37        	<unknown>
+      1c: 00           	<unknown>
+
+Disassembly of section .riscv.attributes:
+
+00000000 <.riscv.attributes>:
+       0: 41 2f        	<unknown>
+       2: 00 00        	<unknown>
+       4: 00 72        	<unknown>
+       6: 69 73        	<unknown>
+       8: 63 76 00 01  	bgeu	zero, a6, 0x14 <.riscv.attributes+0x14>
+       c: 25 00        	<unknown>
+       e: 00 00        	<unknown>
+      10: 04 10        	<unknown>
+      12: 05 72        	<unknown>
+      14: 76 33        	<unknown>
+      16: 32 69        	<unknown>
+      18: 32 70        	<unknown>
+      1a: 30 5f        	<unknown>
+      1c: 6d 32        	<unknown>
+      1e: 70 30        	<unknown>
+      20: 5f 61 32 70  	<unknown>
+      24: 30 5f        	<unknown>
+      26: 66 32        	<unknown>
+      28: 70 30        	<unknown>
+      2a: 5f 64 32 70  	<unknown>
+      2e: 30 00        	<unknown>
+
+Disassembly of section .symtab:
+
+00000000 <.symtab>:
+		...
+      10: 45 00        	<unknown>
+		...
+      1a: 00 00        	<unknown>
+      1c: 04 00        	<unknown>
+      1e: f1 ff        	<unknown>
+      20: 22 00        	<unknown>
+      22: 00 00        	<unknown>
+      24: 00 00        	<unknown>
+      26: 00 00        	<unknown>
+      28: 2c 00        	<unknown>
+      2a: 00 00        	<unknown>
+      2c: 12 00        	<unknown>
+      2e: 02 00        	<unknown>
